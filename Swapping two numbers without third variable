@@ -1,0 +1,43 @@
+QUESTION:
+
+Write a java program to swap two values without the use of 3rd variable.
+
+Input format:
+
+First input: an integer
+
+Second input: an integer
+
+Output format:
+
+The output will be integers(swapped values)
+Sample Input:
+
+10
+
+20
+
+Sample Output:
+
+20
+
+10
+
+
+import java.util.Scanner; // importing the scanner function
+
+class Main
+{
+    public static void main(String args[])
+    {
+          Scanner sc= new Scanner(System.in);  // creating new object for scanner function
+          int a,b;  // specifing datatype and variables
+          a=sc.nextInt(); // giving input values
+          b=sc.nextInt(); // giving input values
+          a=a+b; // adding a value with b
+          b=a-b; // subtracting the b value with newly obtained a value to get b value
+          a=a-b; //subttracting the new a value with newly obtained b value 
+          System.out.println(a); // to print the given statement
+          System.out.println(b); // to print the given statement
+    }
+}
